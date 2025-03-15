@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter input: ");
+        int n = scan.nextInt();
+        int count = CountOfDigits(n);
+        System.out.println("Count is : " + count);
+    }
+     public static int CountOfDigits(int n)
+        {
+            if(n%10 ==n)
+            {
+                return 1;
+            }
+            return 1+CountOfDigits(n/10);
+            
+        }
+}
